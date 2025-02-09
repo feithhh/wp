@@ -8,8 +8,8 @@ remot contekan
 
 Cara pindah file di ubuntu ---------------------------------------------------------------
 
-- ls nya di /home/dzaki/wp (di ls mau mindahin apa) misal di dalem ada folder ukk sama dz,, trs mau pindah yang dz
-- mv dz/ /home/dzaki/ (nanti file pindah di dzaki dan tidak lagi di wp)
+- ls nya di /home/niam/wp (di ls mau mindahin apa) misal di dalem ada folder ukk sama nm,, trs mau pindah yang nm
+- mv nm/ /home/niam/ (nanti file pindah di dzaki dan tidak lagi di wp)
 
 Pengertian" dari perintah" ini -----------------------------------------------------------
 
@@ -51,10 +51,10 @@ Public Ip proxmox   : 103.210.35.189:8006
 local Ip proxmox    : 10.10.10.1:8006
 local Ip vm/linux   : 10.10.10.68
 serv name	    : sijanet              (yang ada di belakang @)
-pick user	    : dzaki		 (yang ada di depan @)
+pick user	    : niam		 (yang ada di depan @)
 User proxmox 	    : root
 Pw proxmox 	    : Ukk2025*
-Pw WP		    : ukkdzaki
+Pw WP		    : ukkniam
 FILE prox/wp        : \\10.1.11.201\MyData\hacker NT\ISO
 Kalau Proxmox Linux : User nya pasti default(root) pw nya ngikut
 Kalau WP	    : User dan pw ngikut buatan kita  
@@ -80,14 +80,14 @@ network:
 
 ; Letak domain atau record
 @       IN      A       10.10.10.110
-www.ukk-randi.net.      IN      CNAME   ukk-randi.net.
+www.ukk-niam.net.      IN      CNAME   ukk-niam.net.
 
 Problm-----------------------------------------------------------------------------------
 + jika systemctl restart named.service tidak bisa maka cek 
   -systemctl status named.service(cek status)
   -nano /etc/bind + tab (buat cek ada apa aja di nano bind)
   -nano /etc/bind/ukk-namaKamu.net
-  -nano /etc/bind/ukk-dzaki.net.reverse
+  -nano /etc/bind/ukk-niam.net.reverse
   -nano /etc/bind/named.conf.
   -nano /etc/bind/named.conf.local
 
